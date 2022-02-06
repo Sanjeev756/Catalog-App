@@ -1,5 +1,4 @@
-// ignore_for_file: avoid_unnecessary_containers
-
+import 'package:catalog/home_page.dart';
 import 'package:flutter/material.dart';
 
 void main(List<String> args) {
@@ -13,14 +12,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Catalog Demo',
-      home: Material(
-        child: Center(
-          child: Container(
-            child: const Text("Welcome to 10 days in this app"),
-          ),
-        ),
-      ),
+      title: 'Catalog App',
+      home: HomePage(),
     );
   }
 }
