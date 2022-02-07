@@ -16,17 +16,17 @@ class MyApp extends StatelessWidget {
       title: 'Catalog App',
       // home: HomePage(),
       themeMode: ThemeMode.light,
-      theme: ThemeData(primarySwatch: Colors.deepPurple),
+      theme: ThemeData(primarySwatch: Colors.deepPurple
+      ),
       darkTheme: ThemeData(
         brightness: Brightness.light,
       ),
 
-      initialRoute: "/home",
+      initialRoute: "/login",
       routes: {
         "/": (context) => const LoginPage(),
         "/home": (context) => HomePage(),
         "/login": (context) => const LoginPage(),
-        
       },
     );
   }
